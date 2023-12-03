@@ -118,7 +118,7 @@ export function AuditingEntity<T extends ObjectLiteral>(entityType: ObjectLitera
 
         //relations
         metadata.relations
-            .filter((rel) => originInheritanceTree.includes(rel.target as Function))
+            .filter((rel) => originInheritanceTree.includes(rel.target as Function) && rel.relationType !== 'many-to-many')
             .forEach((rel) => {
                 metadata.relations.push({
                     ...rel,
