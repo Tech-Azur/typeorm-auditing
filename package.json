@@ -1,5 +1,5 @@
 {
-  "name": "typeorm-auditing",
+  "name": "tech-azur-typeorm-auditing",
   "version": "0.5.6",
   "description": "TypeORM Auditing: Create history tables and manage changes of entity automatically.",
   "homepage": "https://github.com/kibae/typeorm-auditing",
